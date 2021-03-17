@@ -1,7 +1,9 @@
 package features.steps;
 
 
-import cucumber.api.java.en.*;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import pages.CategoryPage;
 import pages.HomePage;
@@ -24,7 +26,7 @@ public class HomeStep {
     }
 
     @Then("^I should see the \"([^\"]*)\" category$")
-    public void iShouldSeeTheCategory(String category){
-        Assert.assertEquals(category,new CategoryPage().getCategory());
+    public void iShouldSeeTheCategory(String category) {
+        Assert.assertEquals(category, new CategoryPage().getCategory());
     }
 }

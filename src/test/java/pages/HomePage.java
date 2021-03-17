@@ -17,7 +17,7 @@ public class HomePage extends BasePage {
         initElements(driver, this);
     }
 
-    public void selectCategory(){
+    public void selectCategory() {
         category.click();
     }
 
