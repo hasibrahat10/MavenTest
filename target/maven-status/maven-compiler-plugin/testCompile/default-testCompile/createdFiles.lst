@@ -1,0 +1,6 @@
+pages\BasePage.class
+features\steps\HomeStep.class
+features\steps\Hooks.class
+testRunner\TestRunner.class
+pages\CategoryPage.class
+pages\HomePage.class
