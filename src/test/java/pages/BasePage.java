@@ -18,7 +18,7 @@ public class BasePage {
         java.util.logging.Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);
 
         ChromeOptions options = new ChromeOptions();
-        options.setHeadless(true);
+        options.setHeadless(false);
         driver = new ChromeDriver(options);
         driver.get("https://automationstepbystep.com/");
         try {
