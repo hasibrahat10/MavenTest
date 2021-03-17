@@ -15,13 +15,13 @@ public class BasePage {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/chromedriver_win32/chromedriver.exe");
 
         // getting rid of the logging msg
-        System.setProperty("webdriver.chrome.silentOutput", "true");
+//        System.setProperty("webdriver.chrome.silentOutput", "true");
         java.util.logging.Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);
 
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(false);
         driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.MILLISECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get("https://automationstepbystep.com/");
         try {
             Thread.sleep(15000);
