@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 import static org.openqa.selenium.support.PageFactory.initElements;
 
-public class CategoryPage extends BasePage{
+public class CategoryPage extends BasePage {
     @FindBy(xpath = "//h1[text()='API']")
     WebElement categoryName;
 
@@ -13,7 +13,7 @@ public class CategoryPage extends BasePage{
         initElements(driver, this);
     }
 
-    public String getCategory(){
-        return  categoryName.getText();
+    public String getCategory() {
+        return categoryName.getText();
     }
 }

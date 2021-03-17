@@ -11,7 +11,7 @@ public class BasePage {
     public static WebDriver driver;
 
     public void setDriver() {
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/driver/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/chromedriver_win32/chromedriver.exe");
 
         // getting rid of the logging msg
         System.setProperty("webdriver.chrome.silentOutput", "true");
